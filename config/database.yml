@@ -17,10 +17,10 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: shitty_development
+  database: irregularity_development
   pool: 5
-  username: shitty
-  password:
+  username: irregularity
+  password: <%= IO.read(".irregularity") %>
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
@@ -46,15 +46,15 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: shitty_test
+  database: irregularity_test
   pool: 5
-  username: shitty
-  password:
+  username: irregularity
+  password: <%= IO.read(".irregularity") %>
 
 production:
   adapter: postgresql
   encoding: unicode
-  database: shitty_production
+  database: irregularity_production
   pool: 5
-  username: shitty
-  password:
+  username: irregularity
+  password: <%= IO.read(".irregularity") %>
