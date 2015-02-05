@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Shitty::Application.load_tasks
+Irregularity::Application.load_tasks
